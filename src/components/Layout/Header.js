@@ -11,9 +11,6 @@ import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 
 
 
@@ -30,10 +27,6 @@ const Header = props => {
             setIsHomePage(false)
         }
     }, [pathname])
-
-    const onReturnHandler = () => {
-
-    }
 
     return (
         <>
@@ -54,7 +47,6 @@ const Header = props => {
                         </Typography>
                         <NavList />
                         <Mode {...props} />
-                        {/* <Button color="inherit">Login</Button> */}
                     </Toolbar>
                 </AppBar>
             </Box>
@@ -62,26 +54,6 @@ const Header = props => {
                 <img src={mealsImage} alt="Food Table" />
             </div>
         </>
-        // <>
-        //     <header className={classes.header}>
-        //         <section className={classes.subContainer}>
-        //             {!isHomePage &&
-        //                 <NavLink
-        //                     activeClassName={classes.active}
-        //                     className={classes.returnBtn}
-        //                     to="/home">
-        //                     <ArrowBackIosNewIcon />Back
-        //                 </NavLink>
-        //             }
-        //             <h1>UpstreamMeals</h1>
-        //         </section>
-        //         <section className={classes.subContainer}>
-        //             <NavList />
-        //             <Mode {...props} />
-        //         </section>
-
-        //     </header>
-        // </>
     )
 }
 

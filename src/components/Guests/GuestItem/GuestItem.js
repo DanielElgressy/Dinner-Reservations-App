@@ -42,11 +42,6 @@ const GuestItem = (props) => {
             } else {
                 setIsGuestDone(false)
             }
-            // if (checkIfGuestIslast() && allMealsAreComplete) {
-            //     setIsGuestDone(true)
-            // } else {
-            //     setIsGuestDone(false)
-            // }
 
             let updatedGuestInfo = {
                 id: guest.id,
