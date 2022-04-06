@@ -7,10 +7,10 @@ import { Typography } from '@mui/material';
 const Summary = () => {
     return (
         <Card className={classes.summary}>
-            <Typography variant='h2'>Delicious Food, Delivered To You</Typography>
+            <Typography variant='h2'>Delicious Food, Fully Customized</Typography>
             <p>
                 Choose your favorite meal from our broad selection of available meals
-                and enjoy a delicious lunch or dinner at home.
+                and enjoy a delicious dinner at home.
             </p>
             <p>
                 All our meals are cooked with high-quality ingredients, just-in-time and

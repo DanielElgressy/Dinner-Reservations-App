@@ -1,7 +1,8 @@
-import React, { useContext, useState,useEffect } from 'react'
+import React, { useContext, useState, useEffect } from 'react'
 import classes from './Guests.module.css'
 import ReservationContext from '../../store/reservation-context';
-import Card from '@mui/material/Card';
+import { Card, Button } from '@mui/material'
+
 import GuestItem from './GuestItem/GuestItem';
 
 const Guests = () => {
@@ -12,48 +13,6 @@ const Guests = () => {
         { id: "m1", name: "First", options: ["Salad", "Soup"] },
         { id: "m2", name: "Main", options: ["Fish", "Chicken", "Steak"] },
         { id: "m3", name: "Dessert", options: ["Malaby", "Ice Cream", "Apples"] }
-    ]
-
-    const DUMMY_GUESTS = [
-        {
-            id: "g1",
-            name: "guest1",
-            meals: [
-                { id: "m1", course: "First", option: "Salad" },
-                { id: "m2", course: "Main", option: "Fish" },
-                { id: "m3", course: "Dessert", option: "Malaby" }
-            ]
-        },
-        {
-            id: "g2",
-            name: "guest2",
-            meals: [
-                { id: "m1", course: "First", option: "Salad" },
-                { id: "m2", course: "Main", option: "Fish" },
-                { id: "m3", course: "Dessert", option: "Malaby" }
-            ]
-        },
-        {
-            id: "g3",
-            name: "guest3",
-            meals: [
-                { id: "m1", course: "First", option: "Salad" },
-                { id: "m2", course: "Main", option: "Fish" },
-                { id: "m3", course: "Dessert", option: "Malaby" }
-            ]
-        },
-        ,
-        {
-            id: "g3",
-            name: "guest4",
-            meals: [
-                { id: "m1", course: "First", option: "Salad" },
-                { id: "m2", course: "Main", option: "Fish" },
-                { id: "m3", course: "Dessert", option: "Malaby" }
-            ]
-        }
-
-
     ]
 
     const addNewGuest = () => {
@@ -96,9 +55,11 @@ const Guests = () => {
         ))
     )
     return (
-        <Card className={classes.guestsCard} sx={{background:"transparent", boxShadow: 'none'}}>
+        <Card className={classes.guestsCard} sx={{ background: "transparent", boxShadow: 'none', }}>
             {guestList}
-            {reservationCtx.guests.length === 0 && <button onClick={addNewGuest.bind(null, {})}>Add user</button>}
+            {reservationCtx.guests.length === 0 &&
+                <Button variant="contained" sx={{ height: "40px" }} onClick={addNewGuest.bind(null, {})}>Add Guest</Button>
+            }
         </Card>
     )
 }

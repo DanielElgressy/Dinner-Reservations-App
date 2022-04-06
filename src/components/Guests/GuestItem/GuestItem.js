@@ -11,7 +11,6 @@ const GuestItem = (props) => {
     const [mainCourse, setMainCourse] = useState('')
     const [dessertCourse, setDessertCourse] = useState('')
     const [isGuestDone, setIsGuestDone] = useState(false)
-    const [counter, setCounter] = useState(0)
 
     const { guest, mealOptions } = props
 
@@ -21,7 +20,6 @@ const GuestItem = (props) => {
             setIsGuestDone(true)
         } else {
             setIsGuestDone(false)
-            console.log("guest is NOT last")
         }
     }, [guestsCtx.guests.length])
 
@@ -131,8 +129,8 @@ const GuestItem = (props) => {
             borderRadius: "15px",
         }} >
             <CardContent className={classes.guestName}>
-                <Typography variant="h5" onClick={() => { console.log(guestsCtx.guests) }}>
-                    {guest.id}
+                <Typography variant="h5" >
+                    {guest.name}
                 </Typography>
                 <Typography className={classes.removeGuestIcon} onClick={props.onRemoveGuest} >
                     <DeleteOutlineIcon />

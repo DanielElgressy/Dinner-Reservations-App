@@ -36,7 +36,6 @@ function App() {
     <ThemeProvider theme={mode === 'dark' ? themeDark : theme}>
       <Paper sx={{height: "100vh"}}>
         <Header onModeChange={modeHandler} />
-        <main>
           <Switch>
             <Route path="/" exact>
               <Redirect to="/home" />
@@ -50,7 +49,6 @@ function App() {
               </ReservationProvider>
             </Route>
           </Switch>
-        </main>
       </Paper>
     </ThemeProvider>
 
