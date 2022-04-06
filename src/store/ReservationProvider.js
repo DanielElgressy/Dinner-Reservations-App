@@ -58,7 +58,6 @@ const guestsReducer = (state, action) => {
 
 const ReservationProvider = (props) => {
     const [guestState, dispatchGuestAction] = useReducer(guestsReducer, defaultGuestState)
-    const [] = useState()
 
     const addNewGuest = (guest) => {
         dispatchGuestAction({ type: 'ADD', guest: guest })
