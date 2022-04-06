@@ -2,8 +2,8 @@
 
 
 ## Upstream React assignment By Daniel ELgressy 
-Personal contact information:
-Email: danielelgressy@gmail.com
+Personal contact information:.\
+Email: danielelgressy@gmail.com.\
 Phone: 050-7966360
 
 In the project directory, you can run:
