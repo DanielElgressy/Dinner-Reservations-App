@@ -2,7 +2,7 @@
 
 
 ## Upstream React assignment By Daniel ELgressy 
-Personal contact information:.\
+Personal contact information:\
 Email: danielelgressy@gmail.com.\
 Phone: 050-7966360
 
