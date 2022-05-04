@@ -3,7 +3,7 @@
 
 ## Upstream React assignment By Daniel Elgressy 
 Personal contact information:\
-Email: danielelgressy@gmail.com\
+Email: danielelgressy@gmail.com
 
 In the project directory, you can run:
 
